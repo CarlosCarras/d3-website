@@ -2,8 +2,7 @@ const path = require('path'),
     express = require('express'),
     mongoose = require('mongoose'),
     morgan = require('morgan'),
-    bodyParser = require('body-parser'),
-    handlerRouter = require('../routes/handler.server.routes');
+    bodyParser = require('body-parser');
 
 module.exports.init = () => {
 
@@ -22,9 +21,6 @@ module.exports.init = () => {
     // body parsing middleware; this will let us get the data from a POST
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(bodyParser.json());
-
-    // add a router
-    app.use('/api/', handlerRouter);
 
     if (process.env.NODE_ENV === 'production') {
         // Serve any static files
