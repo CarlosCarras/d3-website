@@ -1,0 +1,52 @@
+.avionics-page {
+	background-image: url("../../assets/space.jpg");
+}
+
+.avionics-title {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 4em;
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+.bom-title {
+	color: black;
+	font-size: 4em;
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+.col-avionics-right {
+	max-width: 1024px;
+    background: rgba(255,255,255,0.8);
+    left: 50%;
+    bottom: 0%;
+    box-shadow: 0px 0px 5px 0px #888;
+    -o-box-shadow: 0px 0px 5px 0px #888;
+    -ms-box-shadow: 0px 0px 5px 0px #888;
+    -moz-box-shadow: 0px 0px 5px 0px #888;
+    -webkit-box-shadow: 0px 0px 5px 0px #888;
+    animation: slideup 1.5s;
+    -o-animation: slideup 1.5s;
+    -ms-animation: slideup 1.5s;
+    -moz-animation: slideup 1.5s;
+    -webkit-animation: slideup 1.5s;
+}
+
+.avionics-form {
+	padding: 0 5vw;
+}
+
+.col-avionics-left {
+	padding-left: 50px;
+}
+
+.avionics-description {
+	color: white;
+}
+
+.bom-list {
+	padding: 1em 3em 0em;
+}

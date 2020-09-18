@@ -1,0 +1,19 @@
+[
+	{
+		"name": "Riccardo Bevilacqua",
+		"institution": "University of Florida, Dept. of Mechanical and Aerospace Engineering",
+		"position": "Principal Investigator",
+		"education": "PhD... MS... BS...",
+		"path": "./../../assets/staff_pics/bevilacqua_riccardo.png",
+		"description": "A test description."
+	},
+
+	{
+		"name": "Samuel Buckner",
+		"institution": "University of Florida",
+		"position": "Undergraduate Student",
+		"education": "BS ...",
+		"path": "./../../assets/staff_pics/buckner_samuel.JPG",
+		"description": "A test description."
+	}
+]

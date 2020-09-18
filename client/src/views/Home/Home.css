@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+}
+
+.App {
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+}
+
+.App-logo {
+    height: 30vmin;
+}
+
+.landing-page {
+    background-color: #6FC9E7;
+    min-height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.page-name {
+    position: relative;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 5em;
+    padding: 5vh 5vw 0vh;
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+}
+
+.page-name-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    padding: 0vh 5vw 10vh;
+}
+
+.launch-date {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.4em;
+    padding: 0 10vw 0 5vw;
+    text-align: left;
+}
+
+.App-link {
+    color: #09d3ac;
+}
+
+.col-home-left {
+    display: flex;
+}
+
+.col-home-right {
+    display: flex;
+}
+
+.scroll-arrow a {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  color: #fff;
+  transition: opacity .3s;
+  -o-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -webkit-transition: opacity .3s;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  animation: arrow-anim 2s infinite;
+  -o-animation: arrow-anim 2s infinite;
+  -ms-animation: arrow-anim 2s infinite;
+  -moz-animation: arrow-anim 2s infinite;
+  -webkit-animation: arrow-anim 2s infinite;
+  box-sizing: border-box;
+}
+.scroll-arrow a:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.d3-img img {
+    position: relative;
+    transform: rotate(20deg); 
+    left: 20em;
+    top: -30em;
+    height: 60em;
+    width: 90em;
+}
+
+.section2 {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    color: white;
+    padding: 0 15vw 0;
+    width: 100vw;
+    min-height: 130vh;
+}
+
+.section2 > header {
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 4vh 0 0 0;
+    font-size: 3em;
+}
+
+.section2-description {
+    padding: 3em 0.5em; 
+    text-align: left;
+
+}
+
+.section2 img {
+    height: 200px;
+    padding: 0em 5em;
+}
+
+.homepage-timeline {
+    padding-top: 10em;
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer {
+        visibility: hidden;
+    }
+}
+
+/********************************* arrow-anim *********************************/
+
+@keyframes arrow-anim {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@-o-keyframes arrow-anim {
+  0% {
+    -o-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -o-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -o-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@-ms-keyframes arrow-anim {
+  0% {
+    -ms-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -ms-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -ms-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@-moz-keyframes arrow-anim {
+  0% {
+    -moz-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -moz-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -moz-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+
+@-webkit-keyframes arrow-anim {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
