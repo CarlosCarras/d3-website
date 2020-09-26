@@ -11,7 +11,7 @@ class NavBar extends React.Component {
         if (window.screen.width <= 1024) {
             return (
                 <Navbar collapseOnSelect expand="lg" variant="dark" style={{backgroundColor: "black"}}>
-                    <Navbar.Brand href="/Home"><img src={Logo} alt=""/></Navbar.Brand>
+                    <Navbar.Brand href="/Home"><img src={Logo} alt="" style={{height:"45px"}}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto ">
@@ -19,7 +19,7 @@ class NavBar extends React.Component {
                             <Nav.Link href="/Avionics">Avionics</Nav.Link>
                             <Nav.Link href="/Software">Software</Nav.Link>
                             <Nav.Link href="/AboutUs">About Us</Nav.Link>
-                            <Nav.Link href="/AboutUs">Frequently Asked Questions</Nav.Link>
+                            <Nav.Link href="/FAQ">Frequently Asked Questions</Nav.Link>
                             <NavDropdown title="Other" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/Other/PCB">PCB</NavDropdown.Item>
                             </NavDropdown>

@@ -142,7 +142,30 @@ body {
 }
 
 @media only screen and (max-width: 1280px) {
-    .footer {
+    .page-name {
+        padding: 0 0 1em 1em;
+        font-size: 3em;
+    }
+
+    .page-name-description {
+        padding-left: 2em;
+        font-size: 1.5em;
+    }
+
+    .launch-date {
+        padding-left: 2em;
+        font-size: 1.5em;
+    }
+
+    .section2 > header {
+        font-size: 2em;
+    }
+
+    .section2-description {
+          font-size: 1em;
+    }
+
+    .d3-img img {
         visibility: hidden;
     }
 }
