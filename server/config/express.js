@@ -1,16 +1,9 @@
-const path = require('path'),
+ const path = require('path'),
     express = require('express'),
-    mongoose = require('mongoose'),
     morgan = require('morgan'),
     bodyParser = require('body-parser');
 
 module.exports.init = () => {
-
-    mongoose.connect(process.env.DB_URI || require('../config/config').db.uri, {
-        useNewUrlParser: true
-    });
-    mongoose.set('useCreateIndex', true);
-    mongoose.set('useFindAndModify', false);
 
     // initialize app
     const app = express();
