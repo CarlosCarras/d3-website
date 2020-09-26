@@ -9,19 +9,6 @@ const ADAMUS = require('./../../assets/logo.png');
 const NASA = require('./../../assets/nasa_logo.png');
 
 const Home = () => {
-    const [coordinates, setCoordinates] = useState({
-        latitude: 0.0,
-        longitude: 0.0,
-    });
-
-    const getCoornates =  async () => {
-        await navigator.geolocation.getCurrentPosition(
-            (position) => setCoordinates({
-                latitude: position.coords.latitude, longitude: position.coords.longitude
-            })
-        )
-    };
-
     return (
         <div className="App">
 
