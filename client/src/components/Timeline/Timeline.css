@@ -64,10 +64,10 @@
 
 .cd-timeline-img {
   position: absolute;
-  top: 8px;
-  left: 12px;
-  width: 30px;
-  height: 30px;
+  top: 16px;
+  left: 19px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px #2bb9c0, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
@@ -79,6 +79,7 @@
     width: 30px;
     height: 30px;
     left: 50%;
+    top: 0%;
     margin-left: -15px;
     margin-top: 15px;
     /* Force Hardware Acceleration in WebKit */
@@ -125,6 +126,7 @@
   color: rgba(255,255,255,.9);
   margin-top:0;
   margin-bottom: 5px;
+  font-size: 1em;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-date {
   color: rgba(255,255,255,.7);

@@ -11,7 +11,7 @@ class AboutUs extends React.Component {
         return(
           <div className="about-us-page">
               <div className="about-us-title"> ADAMUS Lab </div>
-              <div className="description">
+              <div className="about-us-description">
                   <p>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       The ADvanced Autonomous MUltiple Spacecraft laboratory (ADAMUS) specializes in 
@@ -28,7 +28,7 @@ class AboutUs extends React.Component {
               </div>
 
               <div className="about-us-title"> Meet the Team </div>
-              <div className="description">
+              <div className="about-us-description">
                   <p>
                       Separated into Faculty, Graduate Students, Undergraduate Students.
                   </p>

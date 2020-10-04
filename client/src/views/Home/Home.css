@@ -41,8 +41,13 @@ body {
     padding: 0vh 5vw 10vh;
 }
 
+.page-name-description > span {
+  font-family: inherit;
+  color:#ff8800;
+}
+
 .launch-date {
-    color: rgba(255, 255, 255, 0.8);
+    color: #ffa600;
     font-family: 'Anton', sans-serif;
     font-size: 1.4em;
     padding: 0 10vw 0 5vw;
@@ -102,11 +107,17 @@ body {
 
 .d3-img img {
     position: relative;
-    transform: rotate(20deg); 
     left: 20em;
     top: -30em;
     height: 60em;
     width: 90em;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    animation: floating 3s infinite; 
+    animation-timing-function: ease-in-out;
 }
 
 .section2 {
@@ -124,17 +135,18 @@ body {
     text-align: center;
     padding: 4vh 0 0 0;
     font-size: 3em;
+    text-decoration: none;
 }
 
 .section2-description {
     padding: 3em 0.5em; 
     text-align: left;
-
 }
 
 .section2 img {
-    height: 200px;
-    padding: 0em 5em;
+    height: 350px;
+    width: 350px;
+    padding: 5em 5em;
 }
 
 .homepage-timeline {
@@ -143,30 +155,47 @@ body {
 
 @media only screen and (max-width: 1280px) {
     .page-name {
-        padding: 0 0 1em 1em;
-        font-size: 3em;
+      padding: 1em 0 1em 1em;
+      font-size: 3em;
     }
 
     .page-name-description {
-        padding-left: 2em;
-        font-size: 1.5em;
+      padding-left: 1.5em;
+      font-size: 2em;
     }
 
     .launch-date {
-        padding-left: 2em;
-        font-size: 1.5em;
+      padding-left: 2em;
+      font-size: 1.5em;
+    }
+
+    .section2 {
+      padding: 0 10vw 0;
     }
 
     .section2 > header {
-        font-size: 2em;
+      font-size: 2em;
     }
 
     .section2-description {
-          font-size: 1em;
+      font-size: 1em;
     }
 
     .d3-img img {
-        visibility: hidden;
+      left: -10em;
+      top: -15em;
+      height: 40em;
+      width: 60em;
+    }
+
+    .section2-description {
+      font-size: 0.8em;
+    }
+
+    .section2 img {
+      height: 180px;
+      width: 120px;
+      padding: 3em 1em;
     }
 }
 
@@ -232,3 +261,15 @@ body {
     -webkit-transform: rotate(-45deg) translate(0, 0);
   }
 }
+
+@keyframes floating { 
+  0% { 
+    transform: rotate(20deg) translate(0,  0px); 
+  } 
+  50%  { 
+    transform: rotate(20deg) translate(2px, 10px); 
+  } 
+  100%   { 
+    transform: rotate(20deg) translate(0, -0px); 
+  }     
+} 
