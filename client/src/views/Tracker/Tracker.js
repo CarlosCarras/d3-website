@@ -1,11 +1,37 @@
 import React from 'react';
+import MapContainer from '../../components/MapContainer/MapContainer';
+import axios from 'axios'
 import './Tracker.css';
 
 class Tracker extends React.Component {
+    constructor(props) {
+      super(props)
+
+      this.state = {
+        googleKey: null,
+      };
+    }
+
+    componentDidMount() {
+      axios.get('/getKey')
+          .then((res) => {
+              const key = res.data;
+              this.setState({
+                  googleKey: key
+              })
+          });
+    }
+
     render() {
-        return(
-          <div className="tracker-container">
-          </div>
+        console.log(this.state.googleKey)
+        return( !(this.state.googleKey === null) ? 
+              <div className="tracker-container">
+                  <MapContainer googleKey={this.state.googleKey} id="google-map"/>
+              </div>
+              
+              :
+              
+              <div className="tracker-container"/>
         )
     }
 }
