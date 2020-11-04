@@ -16,7 +16,7 @@ class Tracker extends React.Component {
       axios.get('/getKey')
           .then((res) => {
               console.log(res)
-              const key = res.data.key;
+              const key = res.data;
               this.setState({
                   googleKey: key
               })

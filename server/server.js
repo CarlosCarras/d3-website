@@ -7,7 +7,8 @@ const googlekey = process.env.MAPS_KEY || require('./config/config.js').google.k
 const app = express.init();
 
 app.get("/getKey", (req, res) => {
-    return res.json({key: googlekey})
+    console.log(googlekey)
+    res.json(googlekey)
 });
 
 app.listen(port, () => console.log(`Server now running on port ${port}!`));
