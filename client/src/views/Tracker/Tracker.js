@@ -15,7 +15,8 @@ class Tracker extends React.Component {
     componentDidMount() {
       axios.get('/getKey')
           .then((res) => {
-              const key = res.data;
+              console.log(res)
+              const key = res.data.key;
               this.setState({
                   googleKey: key
               })
@@ -23,7 +24,6 @@ class Tracker extends React.Component {
     }
 
     render() {
-        console.log(this.state.googleKey)
         return( !(this.state.googleKey === null) ? 
               <div className="tracker-container">
                   <MapContainer googleKey={this.state.googleKey} id="google-map"/>
