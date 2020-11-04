@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link as ScrollLink } from "react-scroll";
 import Timeline from "./../../components/Timeline/Timeline";
 import './starry_sky.css';

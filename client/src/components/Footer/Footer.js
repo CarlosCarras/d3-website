@@ -1,6 +1,4 @@
 import React from 'react';
-import FBLogo from './../../assets/logo-facebook.svg';
-import IGLogo from './../../assets/logo-instagram.svg';
 import './Footer.css'
 
 class Footer extends React.Component {

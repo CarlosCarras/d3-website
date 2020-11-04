@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch, Redirect  } from 'react-router-dom';
 import Home from "./views/Home/Home";
+import Tracker from "./views/Tracker/Tracker"
 import AboutUs from "./views/AboutUs/AboutUs"
 import Avionics from "./views/Avionics/Avionics"
 import Software from "./views/Software/Software"
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/">
           <Redirect to="/Home" />
         </Route>
+        <Route exact path="/Tracker" component={Tracker}></Route>
         <Route exact path="/Avionics" component={Avionics}></Route>
         <Route exact path="/Software" component={Software}></Route>
         <Route exact path="/AboutUs" component={AboutUs}></Route>

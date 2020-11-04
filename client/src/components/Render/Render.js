@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {STLLoader} from 'three/examples/jsm/loaders/STLLoader';
-import RubberDuck from './../../assets/cad-rubber-duck.stl';
 import PCB from './../../assets/piPATCH-L1 - pcb_ant.STL';
 import Draggable from './../Draggable/Draggable'
 import './Render.css'
@@ -101,11 +100,11 @@ class Render extends Component {
         return (
             <div className="product-wrapper">
                 <div className="row">
-                    <div className="flex-column-55">
+                    <div className="flex-column-40 render-window-container">
                         <div id="threejs-product-container"></div>
                     </div>
-                    <div className="flex-column-45 product-column-right">
-                        <div className="product-title">A PCB.</div>
+                    <div className="product-column-right">
+                        <div className="flex-column-50 product-title">A PCB.</div>
                         <p>
                             This is just an example.
                         </p>
@@ -113,7 +112,7 @@ class Render extends Component {
                             Of a React.js component rendering a .stl file. 
                         </p>
                         <p>
-                            Using Three.js.
+                            Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js. Using Three.js.
                         </p>
                     </div>
                     <Draggable x={20} y={550}>

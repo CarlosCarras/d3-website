@@ -1,5 +1,6 @@
 .avionics-page {
 	background-image: url("../../assets/space.jpg");
+	min-height: 100vh;
 }
 
 .avionics-title {
